@@ -14,7 +14,7 @@ body {
 }
 
 .contador-flotante {
-    display: none; /* Inicialmente oculto */
+
     position: fixed;
     top: 10px;
     right: 10px;
