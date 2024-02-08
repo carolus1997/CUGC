@@ -69,6 +69,6 @@ body {
 /* Ajustes para pantallas más grandes */
 @media screen and (min-width: 768px) {
     #cuentaRegresiva {
-        font-size: 1.25rem; /* Tamaño de fuente aumentado para mejor legibilidad */
+        font-size: 4rem; /* Tamaño de fuente aumentado para mejor legibilidad */
     }
 }
