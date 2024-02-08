@@ -8,19 +8,45 @@ body {
 }
 
 #cuentaRegresiva {
-    font-size: 48px;
+    font-size: 68px;
     font-family: 'Digital', sans-serif;
     margin-bottom: 20px;
+    color: #333; /* Color oscuro para el texto del contador */
 }
 
-.contador-flotante {
 
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1000;
+.btn-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: #ddd; /* Color de fondo inicial para los botones */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el color de fondo y el transform */
+    cursor: pointer;
+}
+
+.btn-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+/* Estilos para hover en los botones */
+#iniciarCuentaRegresiva:hover {
+    background-color: #28a745; /* Verde al hacer hover */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+#detenerCuentaRegresiva:hover {
+    background-color: #dc3545; /* Rojo al hacer hover */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+#reiniciarCuentaRegresiva:hover {
+    background-color: #ffc107; /* Amarillo al hacer hover */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
 }

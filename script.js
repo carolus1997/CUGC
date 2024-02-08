@@ -2,7 +2,6 @@ var intervalo;
 
 function iniciarCuentaRegresiva() {
     detenerCuentaRegresiva();
-    document.getElementById('contadorFlotante').style.display = 'block'; // Muestra el contenedor flotante
     var tiempoRestante = 15 * 60;
     actualizarTiempo(tiempoRestante);
     intervalo = setInterval(function() {
