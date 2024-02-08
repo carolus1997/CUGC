@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px; /* Altura máxima */
+    height: 130px; /* Altura máxima */
     padding: 3px; /* Padding reducido */
     margin: 0; /* Eliminar cualquier margen por defecto */
     background-color: #f0f0f0; /* Fondo claro */
