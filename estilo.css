@@ -1,23 +1,25 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    background-color: #f0f0f0;
+    height: 150px; /* Altura máxima */
+    padding: 3px; /* Padding reducido */
+    margin: 0; /* Eliminar cualquier margen por defecto */
+    background-color: #f0f0f0; /* Fondo claro */
 }
 
 #cuentaRegresiva {
-    font-size: 68px;
+    font-size: 3rem; /* Tamaño de fuente reducido */
     font-family: 'Digital', sans-serif;
-    margin-bottom: 20px;
-    color: #333; /* Color oscuro para el texto del contador */
+    margin-bottom: 2px; /* Espaciado reducido */
+    color: #ec2828; /* Color oscuro para el texto del contador */
 }
 
 
 .btn-icon {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flexbox;
     justify-content: center;
@@ -30,8 +32,8 @@ body {
 }
 
 .btn-icon svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     fill: currentColor;
 }
 
@@ -49,4 +51,24 @@ body {
 #reiniciarCuentaRegresiva:hover {
     background-color: #ffc107; /* Amarillo al hacer hover */
     transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Ajustes para pantallas medianas */
+@media screen and (min-width: 480px) {
+    .btn-icon {
+        width: 40px; /* Ligeramente más grandes en pantallas más anchas */
+        height: 40px;
+    }
+
+    .btn-icon svg {
+        width: 20px; /* Iconos ligeramente más grandes */
+        height: 20px;
+    }
+}
+
+/* Ajustes para pantallas más grandes */
+@media screen and (min-width: 768px) {
+    #cuentaRegresiva {
+        font-size: 1.25rem; /* Tamaño de fuente aumentado para mejor legibilidad */
+    }
 }
