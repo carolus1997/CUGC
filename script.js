@@ -34,3 +34,24 @@ function actualizarTiempo(tiempoRestante) {
 document.getElementById('iniciarCuentaRegresiva').addEventListener('click', iniciarCuentaRegresiva);
 document.getElementById('detenerCuentaRegresiva').addEventListener('click', detenerCuentaRegresiva);
 document.getElementById('reiniciarCuentaRegresiva').addEventListener('click', reiniciarCuentaRegresiva);
+
+// Verifica si los Web Workers están disponibles
+if (window.Worker) {
+    var myWorker = new Worker('timerWorker.js');
+
+    myWorker.onmessage = function(e) {
+        var tiempoRestante = e.data;
+        var minutos = parseInt(tiempoRestante / 60, 10);
+        var segundos = parseInt(tiempoRestante % 60, 10);
+
+        minutos = minutos < 10 ? "0" + minutos : minutos;
+        segundos = segundos < 10 ? "0" + segundos : segundos;
+
+        document.getElementById('cuentaRegresiva').textContent = minutos + ":" + segundos;
+
+        if (tiempoRestante <= 0) {
+            document.getElementById('cuentaRegresiva').textContent = "¡Tiempo agotado!";
+            myWorker.terminate(); // Termina el worker si la cuenta atrás ha finalizado
+        }
+    };
+}
