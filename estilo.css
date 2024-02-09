@@ -6,7 +6,7 @@ body {
     height: 130px; /* Altura máxima */
     padding: 3px; /* Padding reducido */
     margin: 0; /* Eliminar cualquier margen por defecto */
-    background-color: #343151; /* Fondo claro */
+    background-color: #2a2835; /* Fondo oscuro */
 }
 
 #cuentaRegresiva {
