@@ -6,14 +6,14 @@ body {
     height: 130px; /* Altura máxima */
     padding: 3px; /* Padding reducido */
     margin: 0; /* Eliminar cualquier margen por defecto */
-    background-color: #f0f0f0; /* Fondo claro */
+    background-color: #343151; /* Fondo claro */
 }
 
 #cuentaRegresiva {
     font-size: 3rem; /* Tamaño de fuente reducido */
     font-family: 'Digital', sans-serif;
     margin-bottom: 2px; /* Espaciado reducido */
-    color: #ec2828; /* Color oscuro para el texto del contador */
+    color: #ffffff; /* Color oscuro para el texto del contador */
 }
 
 
