@@ -3,31 +3,29 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 130px; /* Altura máxima */
-    padding: 3px; /* Padding reducido */
-    margin: 0; /* Eliminar cualquier margen por defecto */
-    background-color: #2a2835; /* Fondo oscuro */
+    height: 100vh; /* Ajuste para usar toda la altura de la ventana */
+    padding: 3px;
+    margin: 0;
+    background-color: #2a2835;
 }
 
 #cuentaRegresiva {
-    font-size: 3rem; /* Tamaño de fuente reducido */
+    font-size: 3rem;
     font-family: 'Digital', sans-serif;
-    margin-bottom: 2px; /* Espaciado reducido */
-    color: #ffffff; /* Color oscuro para el texto del contador */
+    color: #ffffff;
 }
-
 
 .btn-icon {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    display: flexbox;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
     border: none;
-    background-color: #ddd; /* Color de fondo inicial para los botones */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el color de fondo y el transform */
+    background-color: #ddd;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
 }
 
@@ -37,38 +35,20 @@ body {
     fill: currentColor;
 }
 
-/* Estilos para hover en los botones */
 #iniciarCuentaRegresiva:hover {
     background-color: #28a745; /* Verde al hacer hover */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    transform: scale(1.1);
 }
 
-#detenerCuentaRegresiva:hover {
-    background-color: #dc3545; /* Rojo al hacer hover */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
-}
-
-#reiniciarCuentaRegresiva:hover {
-    background-color: #ffc107; /* Amarillo al hacer hover */
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
-}
-
-/* Ajustes para pantallas medianas */
 @media screen and (min-width: 480px) {
     .btn-icon {
-        width: 40px; /* Ligeramente más grandes en pantallas más anchas */
+        width: 40px;
         height: 40px;
-    }
-
-    .btn-icon svg {
-        width: 20px; /* Iconos ligeramente más grandes */
-        height: 20px;
     }
 }
 
-/* Ajustes para pantallas más grandes */
 @media screen and (min-width: 768px) {
     #cuentaRegresiva {
-        font-size: 4rem; /* Tamaño de fuente aumentado para mejor legibilidad */
+        font-size: 4rem;
     }
 }
